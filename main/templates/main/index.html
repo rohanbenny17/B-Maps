@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'main/index/index.css' %}">
+  <title>B-MAPS</title>
+</head>
+<body>
+  <header class="text-white body-font" style="background: turquoise;">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" bis_skin_checked="1">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="{% url 'main:index' %}">
+        <img src="{% static 'main/logo1.jpeg' %}" alt="" style="height: 35px; padding: 4px;">
+        <span class="ml-3 text-xl">B-MAPS</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="{% url 'main:about' %}" class="text-white mr-5 hover:text-black">ABOUT US</a>
+        <a href="{% url 'main:emp_login' %}" class="text-white mr-5 hover:text-black">EMPLOYEE LOGIN</a>
+        <a href="{% url 'main:user_login' %}" class="text-white mr-5 hover:text-black">USER LOGIN</a>
+      </nav>
+    </div>
+  </header>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-20 mx-auto" bis_skin_checked="1">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap" bis_skin_checked="1">
+        
+        <div class="lg:w-1/2 w-full lg:pl-32 lg:py-14 mt-8 lg:mt-0" bis_skin_checked="1">
+          </div>
+          <p class="leading-relaxed text-justify">
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5" bis_skin_checked="1">
+            <div class="flex" bis_skin_checked="1">
+              <span class="mr-3"></span>
+            </div>
+            <div class="flex ml-6 items-center" bis_skin_checked="1">
+              <div class="relative" bis_skin_checked="1"></div>
+            </div>
+          </div>
+          <div class="flex" bis_skin_checked="1">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-2 mx-auto flex flex-col" bis_skin_checked="1">
+      <div class="lg:w-4/6 mx-auto" bis_skin_checked="1">
+        <div class="rounded-lg h-66 overflow-hidden" bis_skin_checked="1">
+        </div>
+       
+  </section> 
+  <footer class="text-gray-600 body-font">
+  <div class="container px-5 py-9 mx-auto flex items-center sm:flex-row flex-col" bis_skin_checked="1">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>>
+    </span>
+  </div>
+</footer>
+
+</body>
+
+</html>

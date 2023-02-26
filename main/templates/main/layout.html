@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <header class="text-white body-font" style="background: turquoise;">
+          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" bis_skin_checked="1">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="{% url 'main:index' %}">
+              <img src="{% static 'main/logo1.jpeg' %}" alt="" style="height: 35px; padding: 4px;">
+              <span class="ml-3 text-xl">B-MAPS</span>
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+              <a href="{% url 'main:about' %}" class="text-white mr-5 hover:text-black">ABOUT US</a>
+              <a href="{% url 'main:emp_login' %}" class="text-white mr-5 hover:text-black">EMPLOYEE LOGIN</a>
+              <a href="{% url 'main:user_login' %}" class="text-white mr-5 hover:text-black">USER LOGIN</a>
+            </nav>
+          </div>
+        </header>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

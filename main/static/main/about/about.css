@@ -1,0 +1,23 @@
+body{
+    background-image: url('./image1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+.heading {
+    color: black; 
+    font-size: xx-large; 
+    font-family: 'Times New Roman',Times, serif;
+    text-decoration-line: underline;
+}
+
+.content {
+    color:antiquewhite; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; 
+    text-align: justify;
+    font-stretch: semi-expanded;
+    font-size:x-large;
+    font-display: centre;
+    text-shadow: 0cm;
+}
